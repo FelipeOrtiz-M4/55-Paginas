@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.appConteiner {
+    background: no-repeat  url('../img/coffe.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+}
+
+#title1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+
+#text1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+button{
+  background: black;
+  color:#fff;
+  border:none;
+  position: relative;
+  height:60px;
+  width: 300px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color: black;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: black;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+}
