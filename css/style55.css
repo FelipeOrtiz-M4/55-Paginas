@@ -9,6 +9,9 @@
     background-position: center;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left {
@@ -71,7 +74,13 @@ button:hover:before,button:hover:after{
 
 .right {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
     color: white;
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
